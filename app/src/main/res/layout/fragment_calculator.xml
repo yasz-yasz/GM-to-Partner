@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <!-- Search Input Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/card_white"
+            app:cardCornerRadius="14dp"
+            app:cardElevation="2dp"
+            app:strokeColor="@color/divider_light"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="14dp">
+
+                <!-- Origin + Swap + Destination -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/hint_origin"
+                            app:boxCornerRadiusBottomEnd="10dp"
+                            app:boxCornerRadiusBottomStart="10dp"
+                            app:boxCornerRadiusTopEnd="10dp"
+                            app:boxCornerRadiusTopStart="10dp">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/et_origin"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:completionThreshold="1"
+                                android:imeOptions="actionNext"
+                                android:inputType="textNoSuggestions"
+                                android:maxLines="1"
+                                android:padding="12dp"
+                                android:textSize="14sp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:hint="@string/hint_destination"
+                            app:boxCornerRadiusBottomEnd="10dp"
+                            app:boxCornerRadiusBottomStart="10dp"
+                            app:boxCornerRadiusTopEnd="10dp"
+                            app:boxCornerRadiusTopStart="10dp">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/et_destination"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:completionThreshold="1"
+                                android:imeOptions="actionSearch"
+                                android:inputType="textNoSuggestions"
+                                android:maxLines="1"
+                                android:padding="12dp"
+                                android:textSize="14sp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                    <ImageButton
+                        android:id="@+id/btn_swap"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_marginStart="8dp"
+                        android:background="@drawable/bg_chip_surface"
+                        android:contentDescription="Tukar rute"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_swap" />
+                </LinearLayout>
+
+                <!-- Quick Route Chips -->
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:scrollbars="none">
+
+                    <com.google.android.material.chip.ChipGroup
+                        android:id="@+id/chip_group_quick_routes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:singleLine="true">
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip_quick_cgk_ist"
+                            style="@style/Widget.Material3.Chip.Assist"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CGK → IST" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip_quick_cgk_cdg"
+                            style="@style/Widget.Material3.Chip.Assist"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CGK → CDG" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip_quick_cgk_jfk"
+                            style="@style/Widget.Material3.Chip.Assist"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CGK → JFK" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip_quick_cgk_hnl"
+                            style="@style/Widget.Material3.Chip.Assist"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CGK → HNL" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip_quick_dps_akl"
+                            style="@style/Widget.Material3.Chip.Assist"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="DPS → AKL" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip_quick_cgk_lhr"
+                            style="@style/Widget.Material3.Chip.Assist"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CGK → LHR" />
+                    </com.google.android.material.chip.ChipGroup>
+                </HorizontalScrollView>
+
+                <!-- Cabin & Trip Type Row -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.button.MaterialButtonToggleGroup
+                        android:id="@+id/toggle_cabin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:checkedButton="@id/btn_cabin_business"
+                        app:selectionRequired="true"
+                        app:singleSelection="true">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn_cabin_economy"
+                            style="?attr/materialButtonOutlinedStyle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Economy"
+                            android:textSize="12sp" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn_cabin_business"
+                            style="?attr/materialButtonOutlinedStyle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Business"
+                            android:textSize="12sp" />
+                    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+                    <com.google.android.material.materialswitch.MaterialSwitch
+                        android:id="@+id/switch_round_trip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="PP (×2)"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!-- Max Legs & Combination Mode -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Maksimal Segmen / Transit"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chip_group_max_legs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:checkedChip="@id/chip_legs_3"
+                    app:selectionRequired="true"
+                    app:singleSelection="true">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_legs_1"
+                        style="@style/Widget.Material3.Chip.Filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Direct (1 Leg)" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_legs_2"
+                        style="@style/Widget.Material3.Chip.Filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Maks 2 Leg" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_legs_3"
+                        style="@style/Widget.Material3.Chip.Filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Maks 3 Leg" />
+                </com.google.android.material.chip.ChipGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Mode Maskapai"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chip_group_mode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:checkedChip="@id/chip_mode_all"
+                    app:selectionRequired="true"
+                    app:singleSelection="true">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_mode_all"
+                        style="@style/Widget.Material3.Chip.Filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Semua (Single &amp; Mix)" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_mode_single"
+                        style="@style/Widget.Material3.Chip.Filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Single Partner" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_mode_mix"
+                        style="@style/Widget.Material3.Chip.Filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mix Partner" />
+                </com.google.android.material.chip.ChipGroup>
+
+                <!-- Advanced Options Toggle -->
+                <TextView
+                    android:id="@+id/tv_toggle_advanced"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:paddingVertical="4dp"
+                    android:text="▸ Pengaturan Lanjutan (Group D, SQ, Aeroflot)"
+                    android:textColor="@color/teal_accent"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/layout_advanced_options"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="4dp"
+                    android:visibility="gone">
+
+                    <com.google.android.material.materialswitch.MaterialSwitch
+                        android:id="@+id/switch_group_d_typo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Gunakan tarif Web Typo Group D Business (77.500 vs 47.500)"
+                        android:textSize="12sp" />
+
+                    <com.google.android.material.materialswitch.MaterialSwitch
+                        android:id="@+id/switch_include_sq_all"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sertakan semua rute global Singapore Airlines (non-codeshare)"
+                        android:textSize="12sp" />
+
+                    <com.google.android.material.materialswitch.MaterialSwitch
+                        android:id="@+id/switch_include_aeroflot"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sertakan Aeroflot (Status SkyTeam Suspended)"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_calculate"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/navy_primary"
+                    android:text="@string/btn_calculate"
+                    android:textAllCaps="false"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:cornerRadius="10dp" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Status / Summary Banner -->
+        <LinearLayout
+            android:id="@+id/layout_result_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_result_summary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_primary"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_result_subsummary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progress_calculating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_empty_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Masukkan bandara asal &amp; tujuan, atau ketuk contoh rute cepat di atas (cth: CGK → IST) untuk melihat rekomendasi Single Partner &amp; Mix Partner."
+            android:textColor="@color/text_secondary"
+            android:textSize="13sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_results"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:nestedScrollingEnabled="false" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

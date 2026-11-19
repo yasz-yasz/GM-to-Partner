@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    app:cardBackgroundColor="@color/card_white"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="1dp"
+    app:strokeColor="@color/divider_light"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <!-- Top Badges + Miles -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_badge_primary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_badge_single"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="3dp"
+                    android:text="SINGLE PARTNER"
+                    android:textColor="@color/badge_single_text"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_badge_secondary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:background="@drawable/bg_badge_direct"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="3dp"
+                    android:text="TERHEMAT"
+                    android:textColor="@color/badge_direct_text"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_badge_ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:background="@drawable/bg_badge_ff"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="3dp"
+                    android:text="5TH FREEDOM"
+                    android:textColor="@color/badge_ff_text"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/btn_copy_itinerary"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Salin ringkasan rute"
+                android:src="@drawable/ic_copy" />
+        </LinearLayout>
+
+        <!-- Route Path & Total Miles -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_route_path"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CGK → JED → IST"
+                    android:textColor="@color/navy_primary"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_airlines_involved"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Saudia • 2 Segmen • 6.437 mil"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_total_miles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="105.000"
+                    android:textColor="@color/teal_accent"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_miles_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GarudaMiles (Business OW)"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="10dp"
+            android:background="@color/divider_light" />
+
+        <!-- Per-segment Breakdown Container -->
+        <LinearLayout
+            android:id="@+id/container_segments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <TextView
+            android:id="@+id/tv_itinerary_warning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/bg_badge_warn"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="5dp"
+            android:textColor="@color/badge_warn_text"
+            android:textSize="11sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

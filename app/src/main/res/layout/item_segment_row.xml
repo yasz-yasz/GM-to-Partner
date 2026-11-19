@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingVertical="4dp"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/tv_seg_airline_code"
+        android:layout_width="34dp"
+        android:layout_height="24dp"
+        android:background="@drawable/bg_chip_surface"
+        android:gravity="center"
+        android:text="SV"
+        android:textColor="@color/navy_primary"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_seg_route"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CGK → JED • Saudia"
+            android:textColor="@color/text_primary"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_seg_meta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jakarta → Jeddah • 4.956 mil • Group G"
+            android:textColor="@color/text_secondary"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_seg_miles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="75.000"
+        android:textColor="@color/navy_primary"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

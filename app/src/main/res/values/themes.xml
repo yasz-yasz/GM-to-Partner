@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.GMToPartner" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/navy_primary</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorPrimaryContainer">@color/teal_soft</item>
+        <item name="colorOnPrimaryContainer">@color/navy_primary</item>
+        <item name="colorSecondary">@color/teal_accent</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <item name="android:statusBarColor">@color/navy_dark</item>
+        <item name="android:windowBackground">@color/bg_surface</item>
+    </style>
+</resources>

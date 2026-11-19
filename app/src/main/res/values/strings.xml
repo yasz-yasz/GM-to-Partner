@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GM to Partner</string>
+    <string name="nav_calculator">Kalkulator</string>
+    <string name="nav_fifth_freedom">5th Freedom</string>
+    <string name="nav_directory">Direktori</string>
+    <string name="nav_tpm">Tabel TPM</string>
+    <string name="hint_origin">Bandara Asal (cth: CGK, Jakarta)</string>
+    <string name="hint_destination">Bandara Tujuan (cth: IST, Istanbul)</string>
+    <string name="btn_calculate">Hitung Rekomendasi Miles</string>
+</resources>

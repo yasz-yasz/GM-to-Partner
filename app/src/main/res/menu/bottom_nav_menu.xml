@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_calculator"
+        android:icon="@drawable/ic_calculate"
+        android:title="@string/nav_calculator" />
+    <item
+        android:id="@+id/nav_fifth_freedom"
+        android:icon="@drawable/ic_fifth_freedom"
+        android:title="@string/nav_fifth_freedom" />
+    <item
+        android:id="@+id/nav_directory"
+        android:icon="@drawable/ic_directory"
+        android:title="@string/nav_directory" />
+    <item
+        android:id="@+id/nav_tpm"
+        android:icon="@drawable/ic_table"
+        android:title="@string/nav_tpm" />
+</menu>

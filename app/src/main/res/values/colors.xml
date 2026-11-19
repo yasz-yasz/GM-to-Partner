@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="navy_primary">#0B2545</color>
+    <color name="navy_dark">#071930</color>
+    <color name="teal_accent">#007A87</color>
+    <color name="teal_soft">#E6F4F5</color>
+    <color name="gold_accent">#C89B3C</color>
+    <color name="gold_soft">#FDF6E4</color>
+    <color name="bg_surface">#F3F6FA</color>
+    <color name="card_white">#FFFFFF</color>
+    <color name="text_primary">#102033</color>
+    <color name="text_secondary">#5A6B7C</color>
+    <color name="divider_light">#E2E8F0</color>
+    <color name="badge_direct_bg">#E6F4EA</color>
+    <color name="badge_direct_text">#137333</color>
+    <color name="badge_single_bg">#E8F0FE</color>
+    <color name="badge_single_text">#1967D2</color>
+    <color name="badge_mix_bg">#F3E8FD</color>
+    <color name="badge_mix_text">#7627BB</color>
+    <color name="badge_ff_bg">#FEF3C7</color>
+    <color name="badge_ff_text">#B45309</color>
+    <color name="badge_warn_bg">#FEE2E2</color>
+    <color name="badge_warn_text">#B91C1C</color>
+</resources>

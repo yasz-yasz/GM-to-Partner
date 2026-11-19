@@ -1,0 +1,282 @@
+[
+  {
+    "code": "SQ",
+    "name": "Singapore Airlines",
+    "alliance": "Non-SkyTeam Partner",
+    "country": "Singapore",
+    "hubs": [
+      "SIN"
+    ],
+    "suspended": false,
+    "notes": "Penukaran GarudaMiles resmi dibatasi pada rute codeshare terpilih (SIN ↔ CGK, DPS, SUB, KNO, BOM, LHR). Rute global lain dapat diaktifkan lewat filter opsional."
+  },
+  {
+    "code": "EK",
+    "name": "Emirates",
+    "alliance": "Non-SkyTeam Partner",
+    "country": "UAE",
+    "hubs": [
+      "DXB"
+    ],
+    "suspended": false,
+    "notes": "Berlaku Economy & Business Class (tidak berlaku First Class). Fuel surcharge (YQ) relatif tinggi."
+  },
+  {
+    "code": "QR",
+    "name": "Qatar Airways",
+    "alliance": "Non-SkyTeam Partner",
+    "country": "Qatar",
+    "hubs": [
+      "DOH"
+    ],
+    "suspended": false,
+    "notes": "Berlaku pada rute prime flight & codeshare yang dikerjasamakan. Banyak rute memakai Qsuite."
+  },
+  {
+    "code": "EY",
+    "name": "Etihad Airways",
+    "alliance": "Non-SkyTeam Partner",
+    "country": "UAE",
+    "hubs": [
+      "AUH"
+    ],
+    "suspended": false,
+    "notes": "Berlaku Economy & Business Class (tidak berlaku First Class / The Residence)."
+  },
+  {
+    "code": "JL",
+    "name": "Japan Airlines",
+    "alliance": "Non-SkyTeam Partner",
+    "country": "Japan",
+    "hubs": [
+      "HND",
+      "NRT",
+      "KIX",
+      "ITM",
+      "NGO"
+    ],
+    "suspended": false,
+    "notes": "Mencakup rute domestik Jepang & internasional. CGK-NRT termasuk sweet spot Group F."
+  },
+  {
+    "code": "VN",
+    "name": "Vietnam Airlines",
+    "alliance": "SkyTeam",
+    "country": "Vietnam",
+    "hubs": [
+      "SGN",
+      "HAN",
+      "DAD"
+    ],
+    "suspended": false,
+    "notes": "Sweet spot Eropa dari SGN/HAN (Group G ke FRA/MUC/CPH/MXP)."
+  },
+  {
+    "code": "MU",
+    "name": "China Eastern",
+    "alliance": "SkyTeam",
+    "country": "China",
+    "hubs": [
+      "PVG",
+      "SHA",
+      "PKX",
+      "KMG",
+      "XIY",
+      "NKG",
+      "WUH"
+    ],
+    "suspended": false,
+    "notes": "Jaringan domestik Tiongkok sangat luas + direct CGK/DPS-PVG & fifth freedom AKL-EZE."
+  },
+  {
+    "code": "CI",
+    "name": "China Airlines",
+    "alliance": "SkyTeam",
+    "country": "Taiwan",
+    "hubs": [
+      "TPE",
+      "KHH"
+    ],
+    "suspended": false,
+    "notes": "CGK/DPS-TPE masuk Group D (47.500 Business aktual) + fifth freedom Australia-Auckland."
+  },
+  {
+    "code": "KE",
+    "name": "Korean Air",
+    "alliance": "SkyTeam",
+    "country": "South Korea",
+    "hubs": [
+      "ICN",
+      "GMP",
+      "PUS"
+    ],
+    "suspended": false,
+    "notes": "Konektivitas kuat dari Seoul ke Amerika Utara, Eropa, Asia Timur, dan Oseania."
+  },
+  {
+    "code": "MF",
+    "name": "Xiamen Airlines",
+    "alliance": "SkyTeam",
+    "country": "China",
+    "hubs": [
+      "XMN",
+      "FOC",
+      "PKX",
+      "HGH"
+    ],
+    "suspended": false,
+    "notes": "Rute direct CGK/DPS-XMN & CGK/SUB-FOC masuk Group D."
+  },
+  {
+    "code": "KL",
+    "name": "KLM Royal Dutch Airlines",
+    "alliance": "SkyTeam",
+    "country": "Netherlands",
+    "hubs": [
+      "AMS"
+    ],
+    "suspended": false,
+    "notes": "Fifth freedom CGK-KUL (Group A) & DPS-SIN (Group B) dengan pesawat widebody + direct 1-stop ke AMS."
+  },
+  {
+    "code": "AF",
+    "name": "Air France",
+    "alliance": "SkyTeam",
+    "country": "France",
+    "hubs": [
+      "CDG",
+      "ORY"
+    ],
+    "suspended": false,
+    "notes": "Jaringan Eropa, Afrika & Amerika terbesar dari Paris + fifth freedom LAX-PPT."
+  },
+  {
+    "code": "SK",
+    "name": "Scandinavian Airlines (SAS)",
+    "alliance": "SkyTeam",
+    "country": "Denmark/Sweden/Norway",
+    "hubs": [
+      "CPH",
+      "ARN",
+      "OSL"
+    ],
+    "suspended": false,
+    "notes": "Anggota SkyTeam dari Skandinavia. Sweet spot BKK/HND/ICN ke CPH (Group G)."
+  },
+  {
+    "code": "SV",
+    "name": "Saudia",
+    "alliance": "SkyTeam",
+    "country": "Saudi Arabia",
+    "hubs": [
+      "JED",
+      "RUH",
+      "MED",
+      "DMM"
+    ],
+    "suspended": false,
+    "notes": "Konektivitas kuat dari Indonesia ke Timur Tengah, Turki (IST), Eropa, Afrika, & AS + fifth freedom SIN-DPS."
+  },
+  {
+    "code": "DL",
+    "name": "Delta Air Lines",
+    "alliance": "SkyTeam",
+    "country": "USA",
+    "hubs": [
+      "ATL",
+      "JFK",
+      "LGA",
+      "BOS",
+      "DTW",
+      "MSP",
+      "SLC",
+      "SEA",
+      "LAX"
+    ],
+    "suspended": false,
+    "notes": "Jaringan domestik AS, Transatlantik, Transpasifik, dan Amerika Latin terbesar di SkyTeam."
+  },
+  {
+    "code": "VS",
+    "name": "Virgin Atlantic",
+    "alliance": "SkyTeam",
+    "country": "United Kingdom",
+    "hubs": [
+      "LHR",
+      "MAN"
+    ],
+    "suspended": false,
+    "notes": "Fokus rute jarak jauh London/Manchester ke AS, Karibia, India, Afrika Selatan, dan Korea Selatan."
+  },
+  {
+    "code": "UX",
+    "name": "Air Europa",
+    "alliance": "SkyTeam",
+    "country": "Spain",
+    "hubs": [
+      "MAD",
+      "PMI"
+    ],
+    "suspended": false,
+    "notes": "Penghubung utama Spanyol & Eropa menuju Amerika Latin dan Karibia."
+  },
+  {
+    "code": "AM",
+    "name": "AeroMexico",
+    "alliance": "SkyTeam",
+    "country": "Mexico",
+    "hubs": [
+      "MEX",
+      "GDL",
+      "MTY"
+    ],
+    "suspended": false,
+    "notes": "Hub Mexico City menuju AS, Kanada, Amerika Latin, Eropa, Tokyo, dan Seoul."
+  },
+  {
+    "code": "AR",
+    "name": "Aerolíneas Argentinas",
+    "alliance": "SkyTeam",
+    "country": "Argentina",
+    "hubs": [
+      "EZE",
+      "AEP",
+      "COR"
+    ],
+    "suspended": false,
+    "notes": "Jaringan domestik Argentina & Amerika Selatan + jarak jauh ke Miami, Madrid, dan Roma."
+  },
+  {
+    "code": "ME",
+    "name": "Middle East Airlines (MEA)",
+    "alliance": "SkyTeam",
+    "country": "Lebanon",
+    "hubs": [
+      "BEY"
+    ],
+    "suspended": false,
+    "notes": "Penghubung Beirut ke Timur Tengah, Eropa Barat, dan Afrika Barat."
+  },
+  {
+    "code": "RO",
+    "name": "TAROM",
+    "alliance": "SkyTeam",
+    "country": "Romania",
+    "hubs": [
+      "OTP"
+    ],
+    "suspended": false,
+    "notes": "Jaringan domestik Rumania, Eropa, dan Timur Tengah dari Bukares."
+  },
+  {
+    "code": "SU",
+    "name": "Aeroflot",
+    "alliance": "SkyTeam (Suspended)",
+    "country": "Russia",
+    "hubs": [
+      "SVO"
+    ],
+    "suspended": true,
+    "notes": "Keanggotaan SkyTeam sedang ditangguhkan (suspended). Tidak aktif untuk penukaran reguler."
+  }
+]
